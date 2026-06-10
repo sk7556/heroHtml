@@ -1,12 +1,15 @@
-26/3/27
-패스트api 유튜브 강의로 시작하려고함. 
+실행 환경 정리
+개발할 때 서버가 두 개 떠있어야 해요:
 
-https://www.youtube.com/watch?v=Iub7-ZhEScw&list=PLAfbbwt24AkL7mfhWjvcqhxLnaA7Eh1Ew
+FastAPI 서버 (8000)   → uvicorn app.main:app --reload
+Vite 개발 서버 (5173) → npm run dev (front 폴더에서)
 
-아무튼 그럼. 
-코드가 간결하고 속도가 빠르다고한다. 
+둘 다 터미널 하나씩 차지해요. VS Code 껐다 켜면 둘 다 다시 실행해줘야 해요.
 
-진행사항 기록하면서하고. 여기는 일기장 정도로 사용하자. 
+폴더 위치도 중요해요
+uvicorn  → heroHtml 폴더에서 실행
+npm run dev → heroHtml/front 폴더에서 실행
+폴더 위치 틀리면 에러 나요. 오늘 겪은 것처럼요.
 
-4/2 
-파일 작성, 환경 구성, db구성 
+흐름
+브라우저 → 5173 (React 화면) → 8000 (FastAPI 데이터) → MySQL

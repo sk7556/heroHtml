@@ -4,6 +4,28 @@ source .venv/bin/activate
 
 pip install fastapi uvicorn
 
+# 설치되는 npm들 정리 
+FastAPI ( Python )
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+python-jose
+passlib
+bcrypt
+python-dotenv
+pydantic[email]
+
+React ( Node ) 
+react
+react-dom
+react-router-dom
+axios
+
+
+
+
+
 학습 순서
 1단계 - 환경 세팅
 프로젝트 구조 잡기
@@ -48,3 +70,27 @@ heroHtml/
 ├── .env               # 환경변수
 ├── .gitignore
 └── .venv/
+
+
+# 1. Vite로 React 프로젝트 생성
+# Vite는 리액트를 빠르게 만들고 실행할수 있게 해주는 빌드 도구 ( like maven ) 
+npm create vite@latest front -- --template react
+
+# 2. 프로젝트 폴더로 이동
+cd front
+
+# 3. 기본 패키지 설치 (package.json 기반)
+npm install
+
+# 4. 추가 패키지 설치
+npm install react-router-dom axios
+
+# 5. 리액트 프론트 개발 서버 실행 (localhost:5173)
+npm run dev 
+
+# 6. 배포용 빌드 (dist 폴더에 변환된 파일 생성)
+npm run build
+
+
+
+
